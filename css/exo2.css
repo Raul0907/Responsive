@@ -1,0 +1,97 @@
+body {
+    background-color: lightgrey;
+    width: min-content;
+    height: auto;
+    margin: auto;
+}
+header {
+    justify-content: space-evenly;
+    font-size: 20px;
+    border-bottom: 5px blue solid;
+    background-color: orange;
+}
+footer{
+    border: 5px blue solid;
+    background-color: yellow;
+}
+.table{
+    border: 5px blue solid;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+
+h1{
+    text-align: center; 
+    color: blue;
+    border: 1px blue double;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.nom{
+    font-size: 15px;
+    justify-content: space-between;
+    color: blue;
+    height: 50px;
+}
+
+p{
+    justify-content: space-around;
+    padding-top: 0%;
+}
+
+.cosa{
+    display: flex;
+}
+
+.image {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    align-items:center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.p1{
+    color: gray;
+}
+
+.p2{
+    color: black;
+}
+.p3{
+    color: gray;
+}
+.p4{
+    color: #0d2525;
+}
+
+
+@media screen and (min-width:1200px){
+    .table{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .table {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: repeat(4, 1fr) ;
+       
+    }
+    
+    header {
+        border: none;
+    }
+}
